@@ -11,6 +11,7 @@
 , findutils
 , gnused
 , sshpass
+, jq
 , terraform-docs
 , lib
 , makeWrapper
@@ -29,6 +30,7 @@ let
     gnused # needed by ssh-copy-id
     sshpass # used to provide password for ssh-copy-id
     gnutar # used to upload extra-files
+    jq # used for checking if flakeAttr exists
   ];
 in
 stdenv.mkDerivation {
