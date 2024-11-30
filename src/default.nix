@@ -11,6 +11,7 @@
 , findutils
 , gnused
 , sshpass
+, x11_ssh_askpass
 , terraform-docs
 , lib
 , makeWrapper
@@ -28,6 +29,7 @@ let
     findutils
     gnused # needed by ssh-copy-id
     sshpass # used to provide password for ssh-copy-id
+    x11_ssh_askpass # needed by sshpass
     gnutar # used to upload extra-files
   ];
 in
